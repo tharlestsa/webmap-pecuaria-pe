@@ -1,16 +1,8 @@
 module.exports = {
-  devServer: {
-    disableHostCheck: true,
+  transpileDependencies: ["vuetify"],
+  lintOnSave: true,
+  css: {
+    // Enable CSS source maps.
+    sourceMap: process.env.NODE_ENV !== "production",
   },
-
-  transpileDependencies: ['vue-world-map', 'vuetify'],
-
-  pluginOptions: {
-    i18n: {
-      locale: 'en',
-      fallbackLocale: 'en',
-      localeDir: 'locales',
-      enableInSFC: false,
-    },
-  },
-}
+};

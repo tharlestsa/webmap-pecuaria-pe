@@ -1,25 +1,17 @@
-import Vue from 'vue'
-import Vuetify from 'vuetify/lib'
-import i18n from '@/i18n'
-import '@/sass/overrides.sass'
+/* eslint-disable no-unused-vars */
+import Vue from "vue";
+import Vuetify from "vuetify/lib/framework";
+import "@fortawesome/fontawesome-free/css/all.css";
 
-Vue.use(Vuetify)
+const vuetify = new Vuetify({
+  theme: { disable: true },
+  icons: {
+    iconfont: "fa",
+  },
+});
 
-const theme = {
-  primary: '#bc433a',
-  secondary: '#21a4c2',
-  accent: '#319c57',
-  info: '#58585b',
-}
+Vue.use(Vuetify);
 
 export default new Vuetify({
-  lang: {
-    t: (key, ...params) => i18n.t(key, params),
-  },
-  theme: {
-    themes: {
-      dark: theme,
-      light: theme,
-    },
-  },
-})
+  rtl: false,
+});

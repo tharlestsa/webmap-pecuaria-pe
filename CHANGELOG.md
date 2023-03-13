@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.0.0] 2022-03-17
+### Bugfixing, Updates
+- update to `vuetify@2.5.10`
+- update all dependencies and devDependencies
+- add new example pages
+
 ## [2.1.0] 2020-01-30
 ### Bugfixing, Updates
 - update to `vuetify@2.2.6`
